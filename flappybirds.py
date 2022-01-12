@@ -8,13 +8,13 @@ screen = pg.display.set_mode((288,512))
 clock = pg.time.Clock()
 game_active = True
 
-bg_surface = pg.image.load('Python/FlappyBird/sprites/background-day.png').convert()
-floor_surface_1 = pg.image.load('Python/FlappyBird/sprites/base.png').convert()
+bg_surface = pg.image.load('sprites/background-day.png').convert()
+floor_surface_1 = pg.image.load('sprites/base.png').convert()
 
 floorposition_1 = 0
-bird_upflap = pg.image.load('Python/FlappyBird/sprites/bluebird-upflap.png').convert_alpha()
-bird_midflap = pg.image.load('Python/FlappyBird/sprites/bluebird-midflap.png').convert_alpha()
-bird_downflap = pg.image.load('Python/FlappyBird/sprites/bluebird-downflap.png').convert_alpha()
+bird_upflap = pg.image.load('sprites/bluebird-upflap.png').convert_alpha()
+bird_midflap = pg.image.load('sprites/bluebird-midflap.png').convert_alpha()
+bird_downflap = pg.image.load('sprites/bluebird-downflap.png').convert_alpha()
 bird_index = 0
 bird_frames = [bird_downflap, bird_midflap, bird_upflap, bird_midflap]
 bird_surface = bird_frames[bird_index]
@@ -22,7 +22,7 @@ bird_rect = bird_surface.get_rect(center = (50, 250))
 bird_movement = 0
 gravity = 0.25
 
-pipe_surface = pg.image.load('Python/FlappyBird/sprites/pipe-green.png').convert()
+pipe_surface = pg.image.load('sprites/pipe-green.png').convert()
 flipped_pipe_surface = pg.transform.flip(pipe_surface, False, True).convert()
 height_list = [i for i in range(150, 401, 25)]
 pipe_list = []
