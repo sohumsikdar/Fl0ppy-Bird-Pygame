@@ -12,7 +12,7 @@ After installing all the necessary Libraries run the ```flappybird.py``` file lo
 <br>
 
 ## Assets
-All assets used to make the user interface of the game are located at
+All assets used to make the game are located at
     
     /Flappy-Bird-Pygame/sprites
     /Flappy-Bird-Pygame/Sounds
